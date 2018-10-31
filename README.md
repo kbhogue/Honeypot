@@ -14,8 +14,8 @@ $ gcloud compute ssh mhn-admin --zone="us-central1-c" --command="mongoexport --d
 $ gcloud compute scp mhn-admin:session.json ./session.json
 
 ## Summary of Data
-### number of attacks
-### number of malware samples
-### etc.
+I let the honeypot run for about 20 hours. In that time, I recorded 2614 attacks to my Dionaea honeypot. The attacks came from various countries, but about half of them came from within the US. Most attacks used pcap protocol, but other protocols such as SipSession and SipCall were also detected. Course and destination ports varied from each attack. 
+![](honeypot.gif)
 
 ## Unresolved Questions
+None
